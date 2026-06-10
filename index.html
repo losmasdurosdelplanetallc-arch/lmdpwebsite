@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMDP | Los Más Duros Del Planeta</title>
+    <meta
+      name="description"
+      content="LMDP is a Miami-based creative studio and media company for artists and brands: music production, visuals, content, branding, photography, videography, and events."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="galaxy-canvas" id="galaxy-canvas" aria-hidden="true"></canvas>
+    <div class="planet-cursor" id="planet-cursor" aria-hidden="true">
+      <img src="assets/globe.png" alt="">
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="LMDP home">
+        <span class="brand-mark">+DUR<img src="assets/globe.png" alt="">S</span>
+        <span class="brand-sub">Los Más Duros Del Planeta</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="https://wa.me/message/Q3SZMPUTTFC7F1">Free to chat</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Creative studio + media company</p>
+          <h1>Los Más Duros Del Planeta</h1>
+          <p class="hero-lede">
+            Helping artists and brands bring bold ideas to life through music production, visuals,
+            content creation, branding, photography, videography, and event experiences.
+          </p>
+          <p class="galaxy-badge">Recording from La Galaxia. Built for the planet.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/message/Q3SZMPUTTFC7F1">Start on WhatsApp</a>
+            <a class="button button-secondary" href="#services">View services</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="LMDP services overview">
+          <div class="globe-lockup">
+            <span class="orbit-ring orbit-ring-one" aria-hidden="true"></span>
+            <span class="orbit-ring orbit-ring-two" aria-hidden="true"></span>
+            <img src="assets/globe.png" alt="">
+          </div>
+          <div class="hero-service-grid">
+            <span>Music</span>
+            <span>Visuals</span>
+            <span>Content</span>
+            <span>Branding</span>
+            <span>Events</span>
+          </div>
+          <p class="hero-note">Creative. Culture. Community. Worldwide.</p>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Core services">
+        <span>Music</span>
+        <b>+</b>
+        <span>Visuals</span>
+        <b>+</b>
+        <span>Content</span>
+        <b>+</b>
+        <span>Branding</span>
+        <b>+</b>
+        <span>Events</span>
+      </section>
+
+      <section class="section intro-grid">
+        <div>
+          <p class="eyebrow">Professional services for artists & brands</p>
+          <h2>Everything from the first idea to the final rollout.</h2>
+        </div>
+        <p>
+          LMDP supports creators at every stage: recording, editing, visuals, rollout planning,
+          event coverage, creative direction, and the brand systems that make a project feel real.
+        </p>
+      </section>
+
+      <section class="section studio-strip" aria-label="LMDP studio highlights">
+        <article>
+          <span>01</span>
+          <strong>Music Production</strong>
+          <p>Recording, mixing, mastering, beats, toplines, and studio lock-ins.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Visual Systems</strong>
+          <p>Cover art, lyric videos, edits, photoshoots, merch, and identity design.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Rollout Energy</strong>
+          <p>Content strategy, reels, event coverage, release planning, and brand moments.</p>
+        </article>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Choose what you need.</h2>
+        </div>
+
+        <div class="service-tabs" role="tablist" aria-label="Service categories">
+          <button class="tab is-active" type="button" data-filter="all">All</button>
+          <button class="tab" type="button" data-filter="music">Music</button>
+          <button class="tab" type="button" data-filter="visuals">Visuals</button>
+          <button class="tab" type="button" data-filter="content">Content</button>
+          <button class="tab" type="button" data-filter="events">Events</button>
+          <button class="tab" type="button" data-filter="strategy">Strategy</button>
+        </div>
+
+        <div class="service-groups">
+          <article class="service-group" data-category="music">
+            <div class="group-title">
+              <span>01</span>
+              <h3>Music Production</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Recording Session</strong><span>$35/hr</span><p>Professional vocal recording in a creative studio environment.</p></li>
+              <li><strong>Mix & Master</strong><span>$200+</span><p>Clean, industry-style mix and mastering for your track.</p></li>
+              <li><strong>Songwriting / Topline</strong><span>$150+</span><p>Hooks, lyrics, toplines, and reference vocals for your record.</p></li>
+              <li><strong>Production / Beats</strong><span>$150+</span><p>Custom instrumentals across genres, moods, and rollout goals.</p></li>
+              <li><strong>Studio Lock-In</strong><span>$200+</span><p>Four-hour creative session to record, create, and capture content.</p></li>
+              <li><strong>Artist Development</strong><span>$500+</span><p>One-on-one guidance for your sound, brand, strategy, and growth.</p></li>
+            </ul>
+          </article>
+
+          <article class="service-group" data-category="visuals">
+            <div class="group-title">
+              <span>02</span>
+              <h3>Visuals & Design</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Cover Art Design</strong><span>$100+</span><p>Custom single, EP, or album artwork.</p></li>
+              <li><strong>Lyric Video / Visualizer</strong><span>$80+</span><p>Engaging lyric videos and visualizers for your music.</p></li>
+              <li><strong>Video Editing</strong><span>$150+</span><p>Reels, music promos, teasers, YouTube content, and more.</p></li>
+              <li><strong>Artist Photoshoot</strong><span>$150+</span><p>Creative photoshoots for branding, press kits, and social media.</p></li>
+              <li><strong>Brand Identity Design</strong><span>$200+</span><p>Logos, color palettes, type, and visual identity systems.</p></li>
+              <li><strong>Merch Design</strong><span>$75+</span><p>Custom shirt graphics, mockups, and print-ready files.</p></li>
+            </ul>
+          </article>
+
+          <article class="service-group" data-category="content">
+            <div class="group-title">
+              <span>03</span>
+              <h3>Content & Social</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Content Strategy</strong><span>$150+</span><p>Rollout planning, content ideas, posting strategy, and more.</p></li>
+              <li><strong>Monthly Content Packages</strong><span>$300+/mo</span><p>Consistent content to grow your brand every month.</p></li>
+              <li><strong>Reel / TikTok Edits</strong><span>$50+ each</span><p>High-quality short-form edits that stop the scroll.</p></li>
+              <li><strong>Photography Bundles</strong><span>$250+</span><p>Multiple looks, concepts, and edited photos.</p></li>
+              <li><strong>Rollout Packages</strong><span>$500+</span><p>Full content rollouts for singles, projects, and brand moments.</p></li>
+              <li><strong>Template Packs</strong><span>$25+</span><p>Canva templates for artists: stories, posts, promos, and more.</p></li>
+            </ul>
+          </article>
+
+          <article class="service-group" data-category="events">
+            <div class="group-title">
+              <span>04</span>
+              <h3>Events & Experiences</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Event Coverage</strong><span>$100+</span><p>Photo and video coverage for performances, parties, launches, and creative events.</p></li>
+              <li><strong>Performance Content</strong><span>$150+</span><p>Performance clips, backstage moments, crowd shots, and recap reels.</p></li>
+              <li><strong>Showcase Curation</strong><span>$500+</span><p>Lineup curation, event planning, promotion, and execution.</p></li>
+              <li><strong>Release Party Planning</strong><span>$500+</span><p>Planning and execution for a release experience that feels intentional.</p></li>
+            </ul>
+          </article>
+
+          <article class="service-group" data-category="strategy">
+            <div class="group-title">
+              <span>05</span>
+              <h3>Strategy & Business</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Creative Direction</strong><span>$200+</span><p>Moodboards, concepting, styling, visual direction, and more.</p></li>
+              <li><strong>Electronic Press Kit</strong><span>$75+</span><p>Professional EPKs to help you pitch and get booked.</p></li>
+              <li><strong>Consulting / 1-on-1</strong><span>$100+/hr</span><p>Business, branding, and creative consulting for your career.</p></li>
+              <li><strong>AI Visual Development</strong><span>$75+</span><p>AI-generated concepts, cover ideas, and visual world building.</p></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section packages" id="packages">
+        <div class="section-heading">
+          <p class="eyebrow">Popular packages</p>
+          <h2>Bundled for real rollouts.</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package">
+            <div>
+              <p class="package-kicker">Starter</p>
+              <h3>Single Starter Pack</h3>
+              <p>Recording session, mix & master, cover art, two promo reels, and a mini photoshoot.</p>
+            </div>
+            <strong>$500+</strong>
+            <button type="button" class="button button-small package-ask" data-package="Single Starter Pack">Ask about this</button>
+          </article>
+          <article class="package package-featured">
+            <div>
+              <p class="package-kicker">Best value</p>
+              <h3>Artist Growth Pack</h3>
+              <p>Monthly content with four reels, photography bundle, strategy call, cover art, and ongoing support.</p>
+            </div>
+            <strong>$800+/mo</strong>
+            <button type="button" class="button button-small package-ask" data-package="Artist Growth Pack">Ask about this</button>
+          </article>
+          <article class="package">
+            <div>
+              <p class="package-kicker">Full campaign</p>
+              <h3>Full Rollout Package</h3>
+              <p>Content strategy, cover art and visualizer, reels and promo content, photoshoot, release plan, and rollout.</p>
+            </div>
+            <strong>$1,200+</strong>
+            <button type="button" class="button button-small package-ask" data-package="Full Rollout Package">Ask about this</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section equipment" id="equipment">
+        <div class="section-heading">
+          <p class="eyebrow">Equipment</p>
+          <h2>Built with real tools. Real vision. Real execution.</h2>
+        </div>
+        <div class="equipment-grid">
+          <article><img src="assets/equipment/01-canon-rebel-t6.jpg" alt="Canon Rebel T6 camera"><div><span>01</span><strong>Canon Rebel T6</strong><p>DSLR camera</p></div></article>
+          <article><img src="assets/equipment/02-sony-zv-e10.jpg" alt="Sony ZV-E10 camera"><div><span>02</span><strong>Sony ZV-E10</strong><p>Mirrorless camera</p></div></article>
+          <article><img src="assets/equipment/03-sony-alpha-7iv.jpg" alt="Sony Alpha 7IV camera"><div><span>03</span><strong>Sony Alpha 7IV</strong><p>Mirrorless camera</p></div></article>
+          <article><img src="assets/equipment/04-sony-alpha-6100.jpg" alt="Sony Alpha 6100 camera"><div><span>04</span><strong>Sony Alpha 6100</strong><p>Mirrorless camera</p></div></article>
+          <article><img src="assets/equipment/05-green-screen-setup.jpg" alt="Green screen production setup"><div><span>05</span><strong>Green Screen Setup</strong><p>Video production</p></div></article>
+          <article><img src="assets/equipment/06-rode-nt1.jpg" alt="Rode NT1 microphone"><div><span>06</span><strong>Rode NT1</strong><p>Studio microphone</p></div></article>
+          <article><img src="assets/equipment/07-neumann-tlm-102.jpg" alt="Neumann TLM 102 microphone"><div><span>07</span><strong>Neumann TLM 102</strong><p>Studio microphone</p></div></article>
+          <article><img src="assets/equipment/08-rode-wireless-go-ii.jpg" alt="Rode Wireless GO II microphone system"><div><span>08</span><strong>Rode Wireless GO II</strong><p>Wireless mic system for vlogs, podcasts, and content</p></div></article>
+          <article><img src="assets/equipment/09-apollo-twin-usb.jpg" alt="Apollo Twin USB audio interface"><div><span>09</span><strong>Apollo Twin USB</strong><p>Audio interface</p></div></article>
+          <article><img src="assets/equipment/10-yamaha-hs5.jpg" alt="Yamaha HS5 studio monitors"><div><span>10</span><strong>Yamaha HS5</strong><p>Studio monitors</p></div></article>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Our work</p>
+          <h2>Watch, listen, then build the next one.</h2>
+        </div>
+        <div class="media-showcase">
+          <article class="media-card media-card-large">
+            <a class="video-link video-link-large video-orly" href="https://youtu.be/J0X5FO_GMWc?si=bbPYvJHhCOM1w-54" target="_blank" rel="noreferrer" data-youtube-id="J0X5FO_GMWc" aria-label="Watch A los míos le quería pedir by Orly Flow on YouTube">
+              <span class="play-mark" aria-hidden="true"></span>
+              <em>Watch on YouTube</em>
+            </a>
+            <div>
+              <span>Visualizer</span>
+              <strong>"A los míos le quería pedir" - Orly Flow</strong>
+              <p>Visualizer by LMDP</p>
+            </div>
+          </article>
+          <article class="media-card">
+            <a class="video-link video-vlog" href="https://youtu.be/tnQLEcZPfEg?si=tmhFV05JRVsy1mRe" target="_blank" rel="noreferrer" data-youtube-id="tnQLEcZPfEg" aria-label="Watch La Salsa Vlog by kendaya on YouTube">
+              <span class="play-mark" aria-hidden="true"></span>
+              <em>Watch on YouTube</em>
+            </a>
+            <div>
+              <span>Event coverage & vlog</span>
+              <strong>"La Salsa Vlog" - kendaya</strong>
+            </div>
+          </article>
+          <article class="media-card">
+            <a class="video-link video-release" href="https://youtu.be/A3C2a6x6UaQ?si=4mCjgGWmYz9s0nDK" target="_blank" rel="noreferrer" data-youtube-id="A3C2a6x6UaQ" aria-label="Watch 69AF Release Party by NOYNA on YouTube">
+              <span class="play-mark" aria-hidden="true"></span>
+              <em>Watch on YouTube</em>
+            </a>
+            <div>
+              <span>Release party</span>
+              <strong>"69AF Release Party" - NOYNA</strong>
+            </div>
+          </article>
+          <article class="media-card spotify-card">
+            <div class="embed-frame spotify-frame">
+              <iframe
+                src="https://open.spotify.com/embed/album/2GPV4ywHSttMv6hVrh6kgp"
+                title="69AF by NOYNA on Spotify"
+                loading="lazy"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
+            </div>
+            <div>
+              <span>Music production</span>
+              <strong>"69AF" - NOYNA EP</strong>
+              <p>Vocal production, mix, and master by LMDP</p>
+              <a class="text-link" href="https://open.spotify.com/album/2GPV4ywHSttMv6hVrh6kgp?si=ve2ATWTITluY-xfy0cGV2g" target="_blank" rel="noreferrer">Open on Spotify</a>
+            </div>
+          </article>
+        </div>
+        <div class="work-grid">
+          <a href="https://youtu.be/J0X5FO_GMWc?si=bbPYvJHhCOM1w-54" target="_blank" rel="noreferrer">
+            <span>Visualizer</span>
+            <strong>"A los míos le quería pedir" - Orly Flow</strong>
+            <p>Visualizer by LMDP</p>
+          </a>
+          <a href="https://youtu.be/tnQLEcZPfEg?si=tmhFV05JRVsy1mRe" target="_blank" rel="noreferrer">
+            <span>Event coverage & vlog</span>
+            <strong>"La Salsa Vlog" - kendaya</strong>
+            <p>Event coverage and vlog by LMDP</p>
+          </a>
+          <a href="https://youtu.be/A3C2a6x6UaQ?si=4mCjgGWmYz9s0nDK" target="_blank" rel="noreferrer">
+            <span>Release party</span>
+            <strong>"69AF Release Party" - NOYNA</strong>
+            <p>Release party by LMDP</p>
+          </a>
+          <a href="https://open.spotify.com/album/2GPV4ywHSttMv6hVrh6kgp?si=ve2ATWTITluY-xfy0cGV2g" target="_blank" rel="noreferrer">
+            <span>Music production</span>
+            <strong>"69AF" - NOYNA EP</strong>
+            <p>Vocal production, mix, and master by LMDP</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Miami rooted. Worldwide mindset.</h2>
+        </div>
+        <div class="about-visual">
+          <div class="about-orbit" aria-hidden="true">
+            <img src="assets/globe.png" alt="">
+          </div>
+          <div>
+            <strong>Creative. Culture. Community. Worldwide.</strong>
+            <p>Based in Miami, inspired by the world. The movement reaches beyond borders, but the roots stay here.</p>
+          </div>
+        </div>
+        <div class="about-list">
+          <article><span>01</span><h3>Who We Are</h3><p>Los Más Duros del Planeta (LMDP) is a Miami-based creative collective and multimedia company focused on bringing bold ideas to life through music, visuals, events, and culture-driven experiences. Founded by NOYNA, LMDP was created from a passion for independent artistry, creative freedom, and building opportunities for the next generation of creators.</p></article>
+          <article><span>02</span><h3>The Movement</h3><p>What started as a self-built movement between artists and creatives evolved into a full creative hub offering music production, recording, photography, videography, branding, content creation, event curation, and visual design. Every project is driven by storytelling, originality, and high-quality execution.</p></article>
+          <article><span>03</span><h3>What We Do</h3><p>We bring ideas to life through a full spectrum of creative services: music production, recording, mixing and mastering, photography, videography, content creation, branding, event curation, and visual design. In the studio, on set, or on stage, every detail is handled with purpose and precision.</p></article>
+          <article><span>04</span><h3>Built By NOYNA</h3><p>Founded by NOYNA, a creative with a vision bigger than the industry. LMDP was built on independence, discipline, and the belief that creators deserve real opportunities and real support to turn ideas into impact. This is more than a brand. It is a platform for the next generation.</p></article>
+          <article><span>05</span><h3>For Artists & Brands</h3><p>We work with artists, brands, and visionaries who want more than average. From your first release to your biggest campaign, LMDP provides the creative firepower and strategy to help you stand out, connect, and leave a lasting impression.</p></article>
+          <article><span>06</span><h3>More Than A Company</h3><p>LMDP is a community built for creators who think big, move differently, and want to turn ideas into reality.</p></article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to bring your vision to life?</h2>
+          <p>Let us create something iconic together.</p>
+          <div class="contact-links">
+            <a href="tel:+15618972555"><span>Phone</span>+1 (561) 897-2555</a>
+            <a href="mailto:losmasdurosdelplaneta.llc@gmail.com"><span>Email</span>losmasdurosdelplaneta.llc@gmail.com</a>
+            <a href="https://www.instagram.com/losmasdurosdelplaneta/" target="_blank" rel="noreferrer"><span>Instagram</span>@losmasdurosdelplaneta</a>
+            <p><span>Based in</span>Miami, FL</p>
+          </div>
+        </div>
+
+        <form class="brief" id="brief-form">
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" placeholder="Your name">
+          </label>
+          <label>
+            Service
+            <select name="service">
+              <option>Music Production</option>
+              <option>Visuals & Design</option>
+              <option>Content & Social</option>
+              <option>Events & Experiences</option>
+              <option>Strategy & Business</option>
+              <option>Popular Package</option>
+            </select>
+          </label>
+          <label>
+            Budget
+            <input name="budget" type="text" placeholder="$500+">
+          </label>
+          <label>
+            Project
+            <textarea name="message" rows="5" placeholder="Tell us what you want to build."></textarea>
+          </label>
+          <div class="brief-actions">
+            <button class="button button-primary" type="button" id="whatsapp-brief">Send WhatsApp brief</button>
+            <button class="button button-secondary" type="button" id="email-brief">Email brief</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Los Más Duros Del Planeta</strong>
+        <span>LMDP LLC · Miami, FL · Worldwide · Est. 2026</span>
+      </div>
+      <p>Let's create. Let's build. Let's take over.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
