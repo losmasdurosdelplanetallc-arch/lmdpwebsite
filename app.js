@@ -227,5 +227,36 @@ function setupPlanetCursor() {
   requestAnimationFrame(moveCursor);
 }
 
+function setupScrollVideos() {
+  const videos = document.querySelectorAll("[data-autoplay-video]");
+  if (!videos.length) return;
+
+  videos.forEach((video) => {
+    video.muted = true;
+    video.playsInline = true;
+  });
+
+  if (reduceMotion.matches || !("IntersectionObserver" in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+
+      if (!(video instanceof HTMLVideoElement)) return;
+
+      if (entry.isIntersecting) {
+        video.play().catch(() => {
+          video.controls = true;
+        });
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.48 });
+
+  videos.forEach((video) => observer.observe(video));
+}
+
 setupGalaxy();
 setupPlanetCursor();
+setupScrollVideos();
