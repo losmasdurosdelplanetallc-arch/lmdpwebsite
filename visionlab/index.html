@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vision Lab | LMDP</title>
+    <meta
+      name="description"
+      content="Vision Lab by Los Mas Duros Del Planeta is a creative planning platform for artists, brands, businesses, and creators."
+    >
+    <link rel="stylesheet" href="visionlab.css">
+  </head>
+  <body>
+    <div class="lab-bg" aria-hidden="true"></div>
+    <header class="lab-header">
+      <a class="lab-brand" href="../" aria-label="Back to LMDP main website">
+        <span class="brand-plus">+</span>
+        <span>
+          <strong>Vision Lab</strong>
+          <small>Los Mas Duros Del Planeta</small>
+        </span>
+      </a>
+      <nav class="lab-nav" aria-label="Vision Lab navigation">
+        <a href="../">Back To Main Website</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Night</button>
+        <button class="ghost-button is-hidden" type="button" data-sign-out>Sign Out</button>
+      </nav>
+    </header>
+
+    <main class="lab-shell">
+      <section class="auth-view" data-auth-view>
+        <div class="auth-copy">
+          <p class="eyebrow">Creative headquarters</p>
+          <h1>Organize your ideas. Build your vision. Bring it to life.</h1>
+          <p>
+            Vision Lab helps artists, brands, businesses, and creators gather inspiration,
+            plan projects, generate a clean creative brief, and send the vision to LMDP.
+          </p>
+          <div class="auth-feature-grid" aria-label="Vision Lab features">
+            <span>Project boards</span>
+            <span>Mood boards</span>
+            <span>Reference links</span>
+            <span>Vision reports</span>
+          </div>
+        </div>
+
+        <section class="auth-card" aria-label="Vision Lab account">
+          <div class="auth-tabs" role="tablist" aria-label="Account actions">
+            <button class="is-active" type="button" data-auth-tab="signin">Sign In</button>
+            <button type="button" data-auth-tab="create">Create Account</button>
+            <button type="button" data-auth-tab="reset">Reset Password</button>
+          </div>
+
+          <form class="auth-form" data-auth-form="signin">
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+            </label>
+            <label>
+              Password
+              <input name="password" type="password" autocomplete="current-password" required placeholder="Password">
+            </label>
+            <button class="primary-button" type="submit">Enter Vision Lab</button>
+          </form>
+
+          <form class="auth-form is-hidden" data-auth-form="create">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+            </label>
+            <label>
+              Password
+              <input name="password" type="password" autocomplete="new-password" required minlength="6" placeholder="6+ characters">
+            </label>
+            <button class="primary-button" type="submit">Create My Workspace</button>
+          </form>
+
+          <form class="auth-form is-hidden" data-auth-form="reset">
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+            </label>
+            <label>
+              New Password
+              <input name="password" type="password" autocomplete="new-password" required minlength="6" placeholder="New password">
+            </label>
+            <button class="primary-button" type="submit">Reset Password</button>
+          </form>
+
+          <p class="auth-note" data-auth-note>
+            Your workspace saves privately in this browser until LMDP connects live account storage.
+          </p>
+        </section>
+      </section>
+
+      <section class="dashboard-view is-hidden" data-dashboard-view>
+        <div class="dashboard-hero">
+          <div>
+            <p class="eyebrow">My Projects</p>
+            <h1>Vision Lab</h1>
+            <p>Organize your ideas. Build your vision. Bring it to life.</p>
+          </div>
+          <button class="primary-button" type="button" data-open-new-project>New Project</button>
+        </div>
+
+        <section class="empty-state is-hidden" data-empty-state>
+          <div class="empty-illustration" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h2>Welcome to Vision Lab.</h2>
+          <p>This is where ideas become reality. Create your first project and start building your vision.</p>
+          <button class="primary-button" type="button" data-open-new-project>Create First Project</button>
+        </section>
+
+        <section class="featured-section" data-featured-section>
+          <div class="section-title-row">
+            <div>
+              <p class="eyebrow">Featured Projects</p>
+              <h2>Pinned for quick access</h2>
+            </div>
+            <span data-feature-count>0 / 3 pinned</span>
+          </div>
+          <div class="featured-grid" data-featured-grid></div>
+        </section>
+
+        <section class="projects-panel">
+          <div class="project-toolbar">
+            <label class="search-field">
+              <span>Search projects</span>
+              <input type="search" placeholder="Search by name, type, or status" data-project-search>
+            </label>
+            <label>
+              Sort
+              <select data-project-sort>
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="type">Project Type</option>
+              </select>
+            </label>
+          </div>
+          <div class="project-grid" data-project-grid></div>
+        </section>
+
+        <aside class="activity-panel">
+          <div class="section-title-row">
+            <div>
+              <p class="eyebrow">Recent Activity</p>
+              <h2>Workspace pulse</h2>
+            </div>
+          </div>
+          <div class="activity-list" data-activity-list></div>
+        </aside>
+      </section>
+
+      <section class="workspace-view is-hidden" data-workspace-view>
+        <div class="workspace-header" data-project-header>
+          <button class="ghost-button" type="button" data-back-dashboard>Back To My Projects</button>
+          <div>
+            <p class="eyebrow" data-workspace-type>Project Workspace</p>
+            <h1 data-workspace-name>Untitled Project</h1>
+            <p data-workspace-updated>Auto-save enabled</p>
+          </div>
+          <div class="workspace-actions">
+            <button class="ghost-button" type="button" data-duplicate-current>Duplicate</button>
+            <button class="danger-button" type="button" data-delete-current>Delete</button>
+          </div>
+        </div>
+
+        <div class="workspace-layout">
+          <aside class="workspace-sidebar">
+            <nav aria-label="Project workspace sections">
+              <a href="#project-cover">Project Cover</a>
+              <a href="#project-overview">Overview</a>
+              <a href="#mood-board">Mood Board</a>
+              <a href="#reference-links">Reference Links</a>
+              <a href="#creative-direction">Creative Direction</a>
+              <a href="#brain-dump">Brain Dump</a>
+              <a href="#vision-report">Vision Report</a>
+              <a href="#future-tools">Future Tools</a>
+            </nav>
+            <div class="progress-card">
+              <span>Project Progress</span>
+              <strong data-progress-label>0%</strong>
+              <div class="progress-track"><span data-progress-bar></span></div>
+              <ul data-progress-list></ul>
+            </div>
+          </aside>
+
+          <div class="workspace-stack">
+            <section class="lab-card cover-workspace" id="project-cover">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Project Cover</p>
+                  <h2>Set the visual world.</h2>
+                </div>
+                <button class="ghost-button" type="button" data-remove-cover>Remove Cover</button>
+              </div>
+              <div class="cover-editor">
+                <div class="cover-preview" data-cover-preview></div>
+                <div class="cover-tools">
+                  <label class="drop-upload cover-drop" data-cover-drop>
+                    <input type="file" accept="image/jpeg,image/png,image/webp" data-cover-upload>
+                    <span>Upload new cover</span>
+                    <small>Drop a JPG, PNG, or WEBP here.</small>
+                  </label>
+                  <button class="secondary-button" type="button" data-cover-from-mood>Select image from Mood Board</button>
+                  <p>Every project gets a cover so your dashboard feels like a creative portfolio board.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="lab-card" id="project-overview">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Section 1</p>
+                  <h2>Project Overview</h2>
+                </div>
+                <span class="autosave">Auto-save enabled</span>
+              </div>
+              <div class="form-grid">
+                <label>
+                  Project Name
+                  <input name="name" type="text" data-field="name">
+                </label>
+                <label>
+                  Project Type
+                  <select name="type" data-field="type"></select>
+                </label>
+                <label>
+                  Main Goal
+                  <select name="goal" data-field="goal"></select>
+                </label>
+                <label>
+                  Project Color
+                  <select name="color" data-field="color"></select>
+                </label>
+              </div>
+              <label>
+                Short Description
+                <textarea rows="3" data-field="description" placeholder="What are you building?"></textarea>
+              </label>
+            </section>
+
+            <section class="lab-card" id="mood-board">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Mood Board</p>
+                  <h2>Collect the visual feeling.</h2>
+                </div>
+                <span data-image-count>0 images</span>
+              </div>
+              <label class="drop-upload mood-drop" data-mood-drop>
+                <input type="file" accept="image/jpeg,image/png,image/webp" multiple data-mood-upload>
+                <span>Drag and drop images here</span>
+                <small>Upload multiple JPG, PNG, or WEBP files.</small>
+              </label>
+              <div class="masonry-grid" data-mood-grid></div>
+            </section>
+
+            <section class="lab-card" id="reference-links">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Section 3</p>
+                  <h2>Reference Links</h2>
+                </div>
+                <span data-reference-count>0 references</span>
+              </div>
+              <form class="reference-form" data-reference-form>
+                <label>
+                  Link URL
+                  <input name="url" type="url" placeholder="https://">
+                </label>
+                <label>
+                  Note
+                  <input name="note" type="text" placeholder="I like the colors, transitions, or editing style.">
+                </label>
+                <button class="secondary-button" type="submit">Add Reference</button>
+              </form>
+              <div class="reference-grid" data-reference-grid></div>
+            </section>
+
+            <section class="lab-card" id="creative-direction">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Section 4</p>
+                  <h2>Creative Direction</h2>
+                </div>
+                <span class="autosave">Auto-save enabled</span>
+              </div>
+              <textarea
+                rows="9"
+                data-field="direction"
+                placeholder="Describe the vibe, mood, themes, locations, wardrobe, color palette, energy, aesthetic, visual references, emotions, and overall direction of your project."
+              ></textarea>
+            </section>
+
+            <section class="lab-card" id="brain-dump">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Section 5</p>
+                  <h2>Brain Dump</h2>
+                </div>
+                <span class="autosave">Unlimited notes</span>
+              </div>
+              <textarea
+                rows="11"
+                data-field="brainDump"
+                placeholder="Write anything that comes to mind. Ideas do not need to be organized."
+              ></textarea>
+            </section>
+
+            <section class="lab-card report-card" id="vision-report">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">Section 6-8</p>
+                  <h2>Project Summary Generator</h2>
+                </div>
+                <span class="mission-badge is-hidden" data-mission-badge>MISSION READY</span>
+              </div>
+              <div class="report-actions">
+                <button class="primary-button" type="button" data-generate-report>Generate Vision Report</button>
+                <button class="secondary-button" type="button" data-ready-share>Mark As Ready To Share</button>
+                <button class="secondary-button" type="button" data-copy-report>Copy Summary</button>
+                <button class="secondary-button" type="button" data-download-pdf>Download PDF</button>
+                <button class="secondary-button" type="button" data-whatsapp-report>Send to WhatsApp</button>
+                <button class="secondary-button" type="button" data-email-report>Send via Email</button>
+              </div>
+              <article class="vision-report-output" data-report-output>
+                <p>Your professional creative brief will appear here.</p>
+              </article>
+            </section>
+
+            <section class="future-grid" id="future-tools" aria-label="Future Vision Lab upgrades">
+              <article><span>Coming Soon</span><strong>Voice Notes</strong></article>
+              <article><span>Coming Soon</span><strong>AI Creative Assistant</strong></article>
+              <article><span>Coming Soon</span><strong>Project Tracking</strong></article>
+              <article><span>Coming Soon</span><strong>Client Portal</strong></article>
+              <article><span>Coming Soon</span><strong>File Delivery</strong></article>
+              <article><span>Coming Soon</span><strong>Revisions</strong></article>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="modal" data-project-modal>
+      <form method="dialog" class="modal-panel" data-new-project-form>
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">New Project</p>
+            <h2>Create your next vision.</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-modal aria-label="Close modal">X</button>
+        </div>
+        <label>
+          Project Name
+          <input name="name" type="text" required placeholder="Summer Single">
+        </label>
+        <label>
+          Project Type
+          <select name="type" required data-new-project-type></select>
+        </label>
+        <button class="primary-button" type="submit">Create Project</button>
+      </form>
+    </dialog>
+
+    <dialog class="modal" data-mood-cover-modal>
+      <div class="modal-panel">
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">Mood Board Cover</p>
+            <h2>Choose a cover image.</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-mood-modal aria-label="Close modal">X</button>
+        </div>
+        <div class="mood-cover-picker" data-mood-cover-picker></div>
+      </div>
+    </dialog>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="visionlab.js"></script>
+  </body>
+</html>
