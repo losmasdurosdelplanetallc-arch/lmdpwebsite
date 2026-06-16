@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beat Drop | LMDP</title>
+    <meta
+      name="description"
+      content="Beat Drop is a local browser rhythm mini game by Los Más Duros Del Planeta. Upload your song, catch the rhythm, and enter La Galaxia."
+    >
+    <link rel="stylesheet" href="beat-drop.css">
+  </head>
+  <body>
+    <main class="arcade-shell">
+      <header class="arcade-header">
+        <a class="back-link" href="/" aria-label="Back to LMDP main website">Back to LMDP</a>
+        <div class="brand-chip" aria-label="Los Más Duros Del Planeta">
+          <span>+DUR</span>
+          <img src="../assets/globe.png" alt="">
+          <span>S</span>
+        </div>
+      </header>
+
+      <section class="game-hero" aria-labelledby="beat-drop-title">
+        <div class="hero-copy">
+          <p class="eyebrow">La Galaxia Arcade</p>
+          <h1 id="beat-drop-title">Beat Drop</h1>
+          <p>Upload your song. Catch the rhythm. Enter La Galaxia.</p>
+        </div>
+
+        <div class="game-card">
+          <div class="upload-panel">
+            <label class="upload-zone" for="song-upload">
+              <span class="upload-icon" aria-hidden="true">+</span>
+              <strong>Upload Song</strong>
+              <small>MP3, WAV, M4A, or OGG. Audio stays local in your browser.</small>
+              <input id="song-upload" type="file" accept=".mp3,.wav,.m4a,.ogg,audio/mpeg,audio/wav,audio/mp4,audio/ogg">
+            </label>
+            <p class="file-status" id="file-status">No song loaded.</p>
+          </div>
+
+          <div class="hud" aria-live="polite">
+            <div>
+              <span>Score</span>
+              <strong id="score-value">0</strong>
+            </div>
+            <div>
+              <span>Combo</span>
+              <strong id="combo-value">0x</strong>
+            </div>
+            <div>
+              <span>Status</span>
+              <strong id="status-value">Load a song</strong>
+            </div>
+          </div>
+
+          <div class="canvas-wrap">
+            <canvas id="beat-canvas" aria-label="Beat Drop rhythm game canvas"></canvas>
+            <div class="canvas-overlay is-visible" id="start-overlay">
+              <strong>Drop your beat into orbit.</strong>
+              <span>Upload a track, press Start, then tap planets inside the glowing drop zone.</span>
+            </div>
+            <div class="end-screen" id="end-screen" hidden>
+              <p class="eyebrow">Mission Complete</p>
+              <h2>Your sound has a universe. Let’s build the visuals around it.</h2>
+              <div class="end-stats">
+                <span id="final-score">Score 0</span>
+                <span id="final-combo">Best Combo 0x</span>
+              </div>
+              <div class="end-actions">
+                <a class="arcade-button primary" href="/#contact">Build Your Vision</a>
+                <a class="arcade-button" href="/#contact">Book a Session</a>
+                <button class="arcade-button" type="button" id="play-again">Play Again</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="arcade-button primary" type="button" id="start-button" disabled>Start</button>
+            <button class="arcade-button" type="button" id="pause-button" disabled>Pause</button>
+            <button class="arcade-button" type="button" id="restart-button" disabled>Restart</button>
+            <button class="arcade-button ghost" type="button" id="new-song-button">Upload New Song</button>
+          </div>
+
+          <audio id="song-audio" preload="metadata"></audio>
+        </div>
+      </section>
+    </main>
+
+    <script src="beat-drop.js"></script>
+  </body>
+</html>
