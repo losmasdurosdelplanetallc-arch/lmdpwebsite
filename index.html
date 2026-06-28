@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMDP | Los Más Duros Del Planeta</title>
+    <meta
+      name="description"
+      content="We are Los Más Duros Del Planeta, a Miami-based creative studio and media company for artists and brands: music production, visuals, content, branding, photography, videography, and events."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="galaxy-canvas" id="galaxy-canvas" aria-hidden="true"></canvas>
+    <div class="planet-cursor" id="planet-cursor" aria-hidden="true">
+      <img src="globe.png" alt="">
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="LMDP home">
+        <span class="brand-mark">+DUR<img src="globe.png" alt="">S</span>
+        <span class="brand-sub">Los Más Duros Del Planeta</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#studio">Studio</a>
+        <a href="#work">Work</a>
+        <a href="#packages">Packages</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="https://wa.me/message/Q3SZMPUTTFC7F1">CHAT NOW</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button class="is-active" type="button" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" data-language="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="mode-toggle" id="mode-toggle" type="button" aria-label="Switch to day mode" aria-pressed="false">
+          <span class="mode-track" aria-hidden="true"><span class="mode-knob"></span></span>
+          <span class="mode-label">Night</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">LMDP</p>
+          <h1>Los Más Duros Del Planeta</h1>
+          <p class="hero-lede">Multimedia services for artists and brands.</p>
+          <p class="galaxy-badge">For the planet. Made in La Galaxia.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/message/Q3SZMPUTTFC7F1">Start on WhatsApp</a>
+            <a class="button button-secondary" href="#services">View services</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="LMDP services overview">
+          <div class="globe-lockup">
+            <span class="orbit-ring orbit-ring-one" aria-hidden="true"></span>
+            <span class="orbit-ring orbit-ring-two" aria-hidden="true"></span>
+            <img src="globe.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Core services">
+        <div>
+          <span>Music</span>
+          <b>+</b>
+          <span>Visuals</span>
+          <b>+</b>
+          <span>Content</span>
+          <b>+</b>
+          <span>Branding</span>
+          <b>+</b>
+          <span>Events</span>
+        </div>
+      </section>
+
+      <section class="section intro-grid">
+        <div>
+          <p class="eyebrow">Professional services for artists & brands</p>
+          <h2>Everything from the first idea to the final rollout.</h2>
+        </div>
+        <p>
+          We are Los Más Duros Del Planeta, a multimedia services business for artists and brands.
+          We build music, visuals, content, branding, and event moments. Recording, mix, master,
+          and studio lock-ins are made in La Galaxia, our physical home studio.
+        </p>
+      </section>
+
+      <section class="section studio-strip" aria-label="LMDP studio highlights">
+        <article>
+          <span>01</span>
+          <strong>Music Production</strong>
+          <p>Recording, mix, master, beats, toplines, and lock-ins made inside La Galaxia.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Visual Systems</strong>
+          <p>Cover art, lyric videos, edits, photoshoots, merch, and identity design.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Rollout Energy</strong>
+          <p>Content strategy, reels, event coverage, release planning, and brand moments.</p>
+        </article>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Browse one lane at a time.</h2>
+        </div>
+
+        <div class="service-tabs" role="tablist" aria-label="Service categories">
+          <button class="tab is-active" type="button" data-filter="music">Music</button>
+          <button class="tab" type="button" data-filter="visuals">Visuals</button>
+          <button class="tab" type="button" data-filter="content">Content</button>
+          <button class="tab" type="button" data-filter="events">Events</button>
+          <button class="tab" type="button" data-filter="strategy">Strategy</button>
+        </div>
+
+        <div class="service-groups">
+          <article class="service-group" data-category="music">
+            <div class="group-title">
+              <span>01</span>
+              <h3>Music Production</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Recording Session</strong><span>$35/hr</span><p>Professional vocal recording inside La Galaxia, our physical home studio.</p></li>
+              <li><strong>Mix & Master</strong><span>$200+</span><p>Clean, industry-style mix and mastering finished through the La Galaxia workflow.</p></li>
+              <li><strong>Songwriting / Topline</strong><span>$150+</span><p>Hooks, lyrics, toplines, and demo vocals for your record.</p></li>
+              <li><strong>Production / Beats</strong><span>$150+</span><p>Custom instrumentals across genres, moods, and rollout goals.</p></li>
+              <li><strong>Studio Lock-In</strong><span>$200+</span><p>Four-hour creative session to record, create, and capture content.</p></li>
+              <li><strong>Artist Development</strong><span>$500+</span><p>One-on-one guidance for your sound, brand, strategy, and growth.</p></li>
+            </ul>
+          </article>
+
+          <article class="service-group is-hidden" data-category="visuals">
+            <div class="group-title">
+              <span>02</span>
+              <h3>Visuals & Design</h3>
+            </div>
+            <ul class="price-list">
+              <li class="service-with-showcase">
+                <strong>Cover Art Design</strong><span>$100+</span>
+                <p>Custom single, EP, or album artwork.</p>
+                <div class="service-showcase portfolio-showcase">
+                  <div class="showcase-copy">
+                    <small>Cover Art Portfolio</small>
+                    <h4>Every release deserves its own visual universe.</h4>
+                    <p>Original cover concepts spanning photography, 3D typography, surreal worlds, Y2K graphics, and campaign-ready release systems.</p>
+                  </div>
+                  <div class="portfolio-strip cover-gallery" aria-label="LMDP cover art examples">
+                    <figure><img src="services/cover-art/sky-natnat.jpg" alt="SKY cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/valentino.jpg" alt="Valentino cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/la-l-baby.jpg" alt="La L Baby cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/la-vida.jpg" alt="La Vida cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/sano-chrome.png" alt="Sano chrome artwork by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/3x3.png" alt="3x3 chrome artwork by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/sahara.png" alt="Sahara cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/eso-dijo.png" alt="Eso Dijo cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/pantycito-rosa.png" alt="Pantycito Rosa cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/en-las-nubes.png" alt="En Las Nubes cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/gangster.png" alt="Gangster cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/como-saiko.png" alt="Como Saiko cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/el-dia-esta-cerca.jpg" alt="El Dia Esta Cerca cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/miradas-69.png" alt="Miradas 69 cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/cha-chiki-cha.png" alt="Cha Chiki Cha cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/sano-noyna.png" alt="Sano cover art for Noyna by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/celo.png" alt="Celo cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/polvito-offline.png" alt="Polvito Offline cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/pina-con-coco.png" alt="Pina con Coco concept artwork by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/en-la-disco.png" alt="En La Disco cover art by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/release-party-art.png" alt="Release Party artwork by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/cover-art/bonita.png" alt="Bonita cover art by LMDP" loading="lazy"></figure>
+                  </div>
+                </div>
+              </li>
+              <li class="service-with-showcase">
+                <strong>Lyric Video / Visualizer</strong><span>$80+</span>
+                <p>Engaging lyric videos and visualizers for your music.</p>
+                <div class="service-showcase lyric-showcase">
+                  <div class="showcase-copy">
+                    <small>Lyric Video Examples</small>
+                    <h4>Give every word its own visual world.</h4>
+                    <p>Clickable references showing how typography, motion, color, and atmosphere can extend the identity of a song.</p>
+                  </div>
+                  <div class="lyric-gallery">
+                    <a href="https://www.youtube.com/watch?v=lITLGKYTP1w" target="_blank" rel="noopener noreferrer">
+                      <img src="services/lyric-no-se-mueve.jpg" alt="No se mueve ni el reloj by NOYNA lyric video thumbnail" loading="lazy">
+                      <span>Lyric Video</span>
+                      <strong>NO SE MUEVE NI EL RELOJ</strong>
+                      <small>NOYNA</small>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=RGd5ulZOT84" target="_blank" rel="noopener noreferrer">
+                      <img src="services/lyric-pa-terapia.jpg" alt="Pa Terapia featuring Noisy and NatNat video thumbnail" loading="lazy">
+                      <span>Lyric Video</span>
+                      <strong>PA TERAPIA</strong>
+                      <small>NOISY + NATNAT</small>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="service-with-showcase">
+                <strong>Creative Visuals</strong><span>$100+</span>
+                <p>Custom motion graphics, screen visuals, menus, branded loops, and visual assets for releases and events.</p>
+                <div class="service-showcase portfolio-showcase">
+                  <div class="showcase-copy">
+                    <small>Motion + Branded Environments</small>
+                    <h4>Visual assets built beyond the usual post.</h4>
+                    <p>Creative loops, display graphics, event screens, specialty menus, and visual moments designed around the project world.</p>
+                  </div>
+                  <div class="creative-visual-proof">
+                    <img src="services/creative-visual-menu.png" alt="69AF specialty menu creative visual designed by LMDP" loading="lazy">
+                    <div class="capability-list" aria-label="Creative visual formats">
+                      <span>Event screens</span>
+                      <span>Motion loops</span>
+                      <span>Digital menus</span>
+                      <span>Release graphics</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><strong>Video Editing</strong><span>$150+</span><p>Reels, music promos, teasers, YouTube content, and more.</p></li>
+              <li><strong>Artist Photoshoot</strong><span>$150+</span><p>Creative photoshoots for branding, press kits, and social media.</p></li>
+              <li class="service-with-showcase">
+                <strong>Brand Identity Design</strong><span>$200+</span>
+                <p>Logos, color palettes, type, and visual identity systems.</p>
+                <div class="service-showcase business-card-showcase">
+                  <div class="showcase-copy">
+                    <small>Business Card Design</small>
+                    <h4>Make the first impression feel like the whole brand.</h4>
+                    <p>Custom front-and-back business card design, print-ready setup, QR integration, and polished presentation mockups.</p>
+                    <b>Starting at $100+</b>
+                  </div>
+                  <figure class="business-card-art">
+                    <img src="services/lmdp-business-cards.png" alt="LMDP custom business card designs shown as premium product mockups" loading="lazy">
+                  </figure>
+                  <div class="logo-portfolio">
+                    <div class="showcase-copy">
+                      <small>Logo Design</small>
+                      <h4>Marks built to be recognized.</h4>
+                      <p>Custom wordmarks, illustrated identities, artist logos, and flexible brand marks designed for real-world use.</p>
+                    </div>
+                    <div class="logo-gallery">
+                      <figure><img src="services/logos/casita-merengue.jpg" alt="La Casita del Merengue illustrated logo design" loading="lazy"></figure>
+                      <figure><img src="services/logos/noyna.png" alt="Noyna artist wordmark design" loading="lazy"></figure>
+                      <figure><img src="services/logos/duros.png" alt="Los Mas Duros Del Planeta logo design" loading="lazy"></figure>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="service-with-showcase">
+                <strong>Website Creation</strong><span>$500+</span>
+                <p>Responsive websites shaped around your brand, story, services, and audience.</p>
+                <div class="service-showcase website-showcase">
+                  <div class="showcase-copy">
+                    <small>Designed + Built by LMDP</small>
+                    <h4>This website is one of our references.</h4>
+                    <p>The LMDP site was designed and developed by us, including its bilingual experience, responsive layouts, interactive details, service architecture, and branded visual system.</p>
+                    <div class="website-feature-list" aria-label="Featured website capabilities">
+                      <b>Interactive galaxy</b>
+                      <b>English + Spanish</b>
+                      <b>Day + night modes</b>
+                      <b>Mobile-first layouts</b>
+                      <b>360 studio tour</b>
+                      <b>Animated service portfolio</b>
+                    </div>
+                  </div>
+                  <div class="website-reference-grid">
+                    <a class="website-preview" href="https://losmasdurosdelplaneta.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the LMDP website">
+                      <div class="browser-bar"><i></i><i></i><i></i><span>losmasdurosdelplaneta.com</span></div>
+                      <img class="website-screenshot" src="services/lmdp-website-homepage.png" alt="Actual LMDP homepage showing its galaxy background, centered hero, animated globe, navigation, and bilingual controls" loading="lazy">
+                      <div class="website-project-label"><b>LMDP</b><span>Brand + service experience</span></div>
+                    </a>
+                    <a class="website-preview" href="https://inspiration-machine-rho.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit The Inspiration Machine website">
+                      <div class="browser-bar"><i></i><i></i><i></i><span>inspiration-machine-rho.vercel.app</span></div>
+                      <img class="website-screenshot" src="inspiration-machine-reference.png" alt="The Inspiration Machine bilingual songwriting prompt generator interface" loading="lazy">
+                      <div class="website-project-label"><b>The Inspiration Machine</b><span>Interactive creative web app</span></div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="service-with-showcase">
+                <strong>Flyer Design</strong><span>$75+</span>
+                <p>Custom promotional flyers for releases, performances, parties, launches, and events.</p>
+                <div class="service-showcase flyer-showcase">
+                  <div class="showcase-copy">
+                    <small>Event + Promo Graphics</small>
+                    <h4>Information that hits like artwork.</h4>
+                    <p>Bold layouts built to announce the moment, establish the visual energy, and stop the scroll.</p>
+                  </div>
+                  <div class="flyer-gallery">
+                    <figure><img src="services/flyer-release-party.png" alt="Release Party promotional flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-orly-flow.png" alt="Orly Flow Release Party promotional flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-next-up-event.jpg" alt="Next Up Miami event lineup flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-next-up-artist.jpg" alt="Next Up Miami featured artist flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-next-up-live-music.png" alt="Next Up Miami live music event flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-next-up-save-date.png" alt="Next Up Miami save the date flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-beat-lounge.png" alt="Beat Lounge DJ event flyer designed by LMDP" loading="lazy"></figure>
+                    <figure><img src="services/flyer-release-party-miami.png" alt="Noisy and NatNat Miami release party flyer designed by LMDP" loading="lazy"></figure>
+                  </div>
+                </div>
+              </li>
+              <li class="service-with-showcase">
+                <strong>Merch Design</strong><span>$75+</span>
+                <p>Custom shirt graphics, mockups, and print-ready files.</p>
+                <div class="service-showcase portfolio-showcase merch-showcase">
+                  <div class="showcase-copy">
+                    <small>Merch Collections</small>
+                    <h4>Wear the project. Carry the world with you.</h4>
+                    <p>Collection concepts, front-and-back layouts, mockups, print-ready graphics, and campaign imagery.</p>
+                  </div>
+                  <div class="merch-collections">
+                    <section>
+                      <h5>Cual Es Tu Destino</h5>
+                      <div class="portfolio-strip merch-gallery">
+                        <figure class="wide"><img src="services/merch/destino-front-back.png" alt="Cual Es Tu Destino front and back shirt concept" loading="lazy"></figure>
+                        <figure><img src="services/merch/celo-front.jpg" alt="Celo merch front shown in use" loading="lazy"></figure>
+                        <figure><img src="services/merch/destino-back-1.jpg" alt="Cual Es Tu Destino shirt back" loading="lazy"></figure>
+                        <figure><img src="services/merch/destino-back-2.jpg" alt="Cual Es Tu Destino campaign shirt" loading="lazy"></figure>
+                        <figure><img src="services/merch/destino-pair.jpg" alt="Cual Es Tu Destino merch worn by two people" loading="lazy"></figure>
+                        <figure><img src="services/merch/destino-friends.jpg" alt="Cual Es Tu Destino merch campaign photo" loading="lazy"></figure>
+                      </div>
+                    </section>
+                    <section>
+                      <h5>LMDP Core</h5>
+                      <div class="portfolio-strip merch-gallery">
+                        <figure><img src="services/merch/lmdp-shirt-front.png" alt="LMDP shirt front mockup" loading="lazy"></figure>
+                        <figure><img src="services/merch/lmdp-shirt-back.png" alt="LMDP shirt back mockup" loading="lazy"></figure>
+                        <figure><img src="services/merch/lmdp-front.jpg" alt="LMDP shirt front worn at a creative event" loading="lazy"></figure>
+                        <figure><img src="services/merch/lmdp-back-1.jpg" alt="Los Mas Duros Del Planeta shirt back" loading="lazy"></figure>
+                        <figure><img src="services/merch/lmdp-back-2.jpg" alt="LMDP merch worn at an event" loading="lazy"></figure>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-group is-hidden" data-category="content">
+            <div class="group-title">
+              <span>03</span>
+              <h3>Content & Social</h3>
+            </div>
+            <ul class="price-list">
+              <li class="service-with-showcase">
+                <strong>Content Creation</strong><span>$100+</span>
+                <p>Short-form content, product moments, lifestyle clips, branded reels, and social-first video packages.</p>
+                <div class="service-showcase portfolio-showcase content-showcase">
+                  <div class="showcase-copy">
+                    <small>Social-First Motion</small>
+                    <h4>Content built to keep the brand moving.</h4>
+                    <p>Purpose-built content for mobile audiences, shaped around your campaign, voice, and rollout goals.</p>
+                  </div>
+                  <div class="content-capability-board" aria-label="Content creation deliverables">
+                    <article>
+                      <span>01</span>
+                      <strong>Short-form video</strong>
+                      <p>Reels, TikToks, hooks, and scroll-stopping edits.</p>
+                    </article>
+                    <article>
+                      <span>02</span>
+                      <strong>Campaign content</strong>
+                      <p>Launch assets that keep one visual world across every post.</p>
+                    </article>
+                    <article>
+                      <span>03</span>
+                      <strong>Product + lifestyle</strong>
+                      <p>Clean, intentional moments designed for the brand.</p>
+                    </article>
+                    <article>
+                      <span>04</span>
+                      <strong>Behind the scenes</strong>
+                      <p>Real process, personality, and story-driven coverage.</p>
+                    </article>
+                  </div>
+                </div>
+              </li>
+              <li><strong>Content Strategy</strong><span>$150+</span><p>Rollout planning, content ideas, posting strategy, and more.</p></li>
+              <li><strong>Monthly Content Packages</strong><span>$300+/mo</span><p>Consistent content to grow your brand every month.</p></li>
+              <li><strong>Reel / TikTok Edits</strong><span>$50+ each</span><p>High-quality short-form edits that stop the scroll.</p></li>
+              <li><strong>Photography Bundles</strong><span>$250+</span><p>Multiple looks, concepts, and edited photos.</p></li>
+              <li><strong>Rollout Packages</strong><span>$500+</span><p>Full content rollouts for singles, projects, and brand moments.</p></li>
+              <li><strong>Template Packs</strong><span>$25+</span><p>Canva templates for artists: stories, posts, promos, and more.</p></li>
+            </ul>
+          </article>
+
+          <article class="service-group is-hidden" data-category="events">
+            <div class="group-title">
+              <span>04</span>
+              <h3>Events & Experiences</h3>
+            </div>
+            <ul class="price-list">
+              <li>
+                <strong>Event Coverage</strong><span>$100+</span>
+                <p>Photo and video coverage for performances, parties, launches, and creative events.</p>
+                <div class="service-showcase service-reference">
+                  <div class="showcase-copy">
+                    <small>See it in action</small>
+                    <a class="text-link" href="#la-salsa-vlog-reference">View La Salsa Vlog coverage</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <strong>Performance Content</strong><span>$150+</span>
+                <p>Performance clips, backstage moments, crowd shots, and recap reels.</p>
+                <div class="service-showcase performance-showcase">
+                  <div class="showcase-copy">
+                    <small>Live performance photography</small>
+                    <h4>Capture the energy on stage.</h4>
+                    <p>Artist-focused photos and content that preserve the movement, presence, and atmosphere of the performance.</p>
+                  </div>
+                  <div class="performance-gallery" aria-label="Performance content examples">
+                    <figure>
+                      <img src="services/performance-content/performance-content-01.jpg" alt="Artist performing live on stage photographed by LMDP" loading="lazy">
+                    </figure>
+                    <figure>
+                      <img src="services/performance-content/performance-content-02.jpg" alt="Close performance photograph of an artist singing on stage by LMDP" loading="lazy">
+                    </figure>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <strong>Showcase Curation</strong><span>$500+</span>
+                <p>Lineup curation, event planning, promotion, and execution.</p>
+                <div class="service-showcase service-reference">
+                  <div class="showcase-copy">
+                    <small>See the experience</small>
+                    <a class="text-link" href="#release-party-reference">View the 69AF showcase</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <strong>Release Party Planning</strong><span>$500+</span>
+                <p>Planning and execution for a release experience that feels intentional.</p>
+                <div class="service-showcase service-reference">
+                  <div class="showcase-copy">
+                    <small>Release party reference</small>
+                    <a class="text-link" href="#release-party-reference">View the NOYNA 69AF release party</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-group is-hidden" data-category="strategy">
+            <div class="group-title">
+              <span>05</span>
+              <h3>Strategy & Business</h3>
+            </div>
+            <ul class="price-list">
+              <li><strong>Creative Direction</strong><span>$200+</span><p>Moodboards, concepting, styling, visual direction, and more.</p></li>
+              <li><strong>Electronic Press Kit</strong><span>$75+</span><p>Professional EPKs to help you pitch and get booked.</p></li>
+              <li><strong>Consulting / 1-on-1</strong><span>$100+/hr</span><p>Business, branding, and creative consulting for your career.</p></li>
+              <li><strong>AI Visual Development</strong><span>$75+</span><p>AI-generated concepts, cover ideas, and visual world building.</p></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section studio-tour" id="studio">
+        <div class="section-heading">
+          <p class="eyebrow">La Galaxia</p>
+          <h2>Step Into La Galaxia Home Studio</h2>
+        </div>
+        <div class="studio-tour-layout">
+          <div class="studio-viewer" data-studio-viewer tabindex="0" aria-label="Interactive 360-style panoramic view of La Galaxia home studio">
+            <img
+              src="studio/la-galaxia-360-enhanced.jpg"
+              alt="Merged panoramic 360-style view of La Galaxia home studio with artist lounge, colorful lights, TV visuals, vocal production desk, speakers, and recording setup"
+              draggable="false"
+              data-studio-image
+            >
+            <div class="studio-viewer-glow" aria-hidden="true"></div>
+            <div class="studio-viewer-info">
+              <span>360 home studio view</span>
+              <strong>Drag / swipe to look around</strong>
+            </div>
+          </div>
+          <aside class="studio-tour-copy">
+            <p class="eyebrow">Record your next hit here</p>
+            <h3>Private, vibey, and ready for the session.</h3>
+            <p>
+              La Galaxia is the physical home studio where LMDP records vocals, shapes ideas,
+              builds references, and captures content around the music. Tour the room, then jump
+              into the music production references to hear the sound created in this space.
+            </p>
+            <div class="studio-tags" aria-label="Studio vibe notes">
+              <span>Recording</span>
+              <span>Vocal production</span>
+              <span>Mix prep</span>
+              <span>Lock-ins</span>
+            </div>
+            <div class="studio-actions">
+              <a class="button button-primary studio-booking" href="#contact" data-service="Music Production" data-message="I want to book a recording session inside La Galaxia.">Book La Galaxia</a>
+              <a class="button button-secondary studio-sound-link" href="#work" data-work-jump="music-production">Hear the sound</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Our work</p>
+          <h2>Proof of the quality.</h2>
+        </div>
+        <div class="work-tabs" role="tablist" aria-label="Work reference categories">
+          <button class="work-tab is-active" type="button" data-work-filter="music-production">Music Production</button>
+          <button class="work-tab" type="button" data-work-filter="music-videos">Music Videos</button>
+          <button class="work-tab" type="button" data-work-filter="visualizers">Visualizers</button>
+          <button class="work-tab" type="button" data-work-filter="events">Events</button>
+        </div>
+        <div class="media-showcase">
+          <div class="work-group is-hidden" data-work-category="visualizers">
+            <div class="work-group-header">
+              <span>03</span>
+              <h3>Visualizers</h3>
+              <p>Animated, lyric, and release visuals built for repeat playback.</p>
+            </div>
+            <div class="work-group-grid">
+              <article class="media-card youtube-playlist-card">
+                <div class="playlist-header">
+                  <div>
+                    <span>YouTube playlist</span>
+                    <strong>Orly Flow visualizers</strong>
+                    <p>Visualizer direction and rollout content by LMDP.</p>
+                  </div>
+                  <a class="text-link" href="https://youtu.be/EXPwaVJmnOs?si=q0fk7KXeKf03P_7c" target="_blank" rel="noreferrer">Open on YouTube</a>
+                </div>
+                <div class="playlist-body">
+                  <a class="playlist-feature" href="https://youtu.be/EXPwaVJmnOs?si=q0fk7KXeKf03P_7c" target="_blank" rel="noreferrer" aria-label="Watch Yo Muero Millo by Orly Flow on YouTube">
+                    <img src="work/orly-visualizers.jpg" alt="YouTube thumbnail for Yo Muero Millo by Orly Flow">
+                    <span class="playlist-count">3 videos</span>
+                    <span class="play-mark" aria-hidden="true"></span>
+                  </a>
+                  <div class="playlist-list playlist-list-scroll" aria-label="Orly Flow visualizers" tabindex="0">
+                    <a class="playlist-item" href="https://youtu.be/J0X5FO_GMWc?si=bbPYvJHhCOM1w-54" target="_blank" rel="noreferrer">
+                      <img src="work/orly-flow.jpg" alt="">
+                      <span>01</span>
+                      <div><b>"A los míos le quería pedir"</b><small>Orly Flow visualizer</small></div>
+                    </a>
+                    <a class="playlist-item" href="https://youtu.be/EXPwaVJmnOs?si=q0fk7KXeKf03P_7c" target="_blank" rel="noreferrer">
+                      <img src="work/orly-visualizers.jpg" alt="">
+                      <span>02</span>
+                      <div><b>"Yo Muero Millo"</b><small>Orly Flow visualizer</small></div>
+                    </a>
+                    <a class="playlist-item" href="https://youtu.be/NM4ehjVbjIw" target="_blank" rel="noreferrer">
+                      <img src="work/orly-flow-third.jpg" alt="">
+                      <span>03</span>
+                      <div><b>"La Bestia De Miami"</b><small>Orly Flow visualizer</small></div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media-card youtube-playlist-card">
+                <div class="playlist-header">
+                  <div>
+                    <span>YouTube playlist</span>
+                    <strong>"Cual es tu destino?" visualizers</strong>
+                    <p>Visualizer direction and rollout content by LMDP.</p>
+                  </div>
+                  <a class="text-link" href="https://youtube.com/playlist?list=PLdXAu6FoYGIDgJOFkw0D_bXJggVlUyZ1b&si=ktCbXMhN7Kp4dsU8" target="_blank" rel="noreferrer">Open full playlist</a>
+                </div>
+                <div class="playlist-body">
+                  <a class="playlist-feature" href="https://www.youtube.com/watch?v=4dORqCX2V0s" target="_blank" rel="noreferrer" aria-label="Watch Perreo Airlines visualizer by NOYNA on YouTube">
+                    <img src="work/perreo-airlines.jpg" alt="YouTube thumbnail for Perreo Airlines visualizer by NOYNA">
+                    <span class="playlist-count">5 videos</span>
+                    <span class="play-mark" aria-hidden="true"></span>
+                  </a>
+                  <div class="playlist-list" aria-label="Cual es tu destino visualizers">
+                    <a class="playlist-item" href="https://www.youtube.com/watch?v=4dORqCX2V0s" target="_blank" rel="noreferrer">
+                      <img src="work/perreo-airlines.jpg" alt="">
+                      <span>01</span>
+                      <div><b>"Perreo Airlines"</b><small>NOYNA visualizer</small></div>
+                    </a>
+                    <a class="playlist-item" href="https://www.youtube.com/watch?v=IMl9hxE4gr0" target="_blank" rel="noreferrer">
+                      <img src="work/tu-no-eres-de-francia.jpg" alt="">
+                      <span>02</span>
+                      <div><b>"Tu no eres de Francia"</b><small>NOYNA visualizer</small></div>
+                    </a>
+                    <a class="playlist-item" href="https://www.youtube.com/watch?v=kPGKhpO-tlo" target="_blank" rel="noreferrer">
+                      <img src="work/eu-nao-sei.jpg" alt="">
+                      <span>03</span>
+                      <div><b>"Eu Nao Sei"</b><small>NOYNA visualizer</small></div>
+                    </a>
+                    <a class="playlist-item" href="https://www.youtube.com/watch?v=1WAVJlFKqK4" target="_blank" rel="noreferrer">
+                      <img src="work/americana.jpg" alt="">
+                      <span>04</span>
+                      <div><b>"Americana"</b><small>NOYNA visualizer</small></div>
+                    </a>
+                    <a class="playlist-item" href="https://www.youtube.com/watch?v=fCB7G-RET1w" target="_blank" rel="noreferrer">
+                      <img src="work/tulum.jpg" alt="">
+                      <span>05</span>
+                      <div><b>"Tulum"</b><small>NOYNA visualizer</small></div>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media-card video-work-card">
+                <a class="video-link video-animation-work" href="https://youtu.be/IB5hsGPl3yM?si=6xbF1juoMLbXmNNN" target="_blank" rel="noreferrer" aria-label="Watch Volando Bajito visualizer by Noisyyy on YouTube">
+                  <img src="work/volando-bajito.jpg" alt="YouTube thumbnail for Volando Bajito visualizer by Noisyyy">
+                  <span class="play-mark" aria-hidden="true"></span>
+                </a>
+                <div>
+                  <span>Animation visualizer</span>
+                  <strong>"Volando Bajito" - Noisyyy</strong>
+                  <p>Stylized release content and animated visual direction.</p>
+                </div>
+              </article>
+
+              <article class="media-card visualizer-accent-card">
+                <div class="accent-orbit" aria-hidden="true">
+                  <img src="globe.png" alt="">
+                </div>
+                <div>
+                  <span>Motion systems</span>
+                  <strong>Visual worlds made for repeat playback.</strong>
+                  <p>Lyric motion, animated assets, cover systems, and rollout graphics that keep the release moving.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="work-group is-hidden" data-work-category="music-videos">
+            <div class="work-group-header">
+              <span>02</span>
+              <h3>Music Videos</h3>
+              <p>Performance, color, pacing, and artist identity in motion.</p>
+            </div>
+            <div class="work-group-grid">
+              <article class="media-card video-work-card">
+                <a class="video-link video-music-work" href="https://youtu.be/QAd0G3iXgdc?si=mb6AjknGF3avDKx4" target="_blank" rel="noreferrer" aria-label="Watch Las Dunks by Noisyyy on YouTube">
+                  <img src="work/las-dunks.jpg" alt="YouTube thumbnail for Las Dunks by Noisyyy">
+                  <span class="play-mark" aria-hidden="true"></span>
+                </a>
+                <div>
+                  <span>Music video</span>
+                  <strong>"Las Dunks" - Noisyyy</strong>
+                  <p>Artist visuals and rollout style.</p>
+                </div>
+              </article>
+              <article class="media-card video-work-card">
+                <a class="video-link video-music-work" href="https://youtu.be/UsqIDNay1Bs?si=NihFFp0EUmtaxpTe" target="_blank" rel="noreferrer" aria-label="Watch En Las Nubes by Noisyyy featuring Streetboy Flow on YouTube">
+                  <img src="work/en-las-nubes.jpg" alt="YouTube thumbnail for En Las Nubes by Noisyyy featuring Streetboy Flow">
+                  <span class="play-mark" aria-hidden="true"></span>
+                </a>
+                <div>
+                  <span>Music video</span>
+                  <strong>"En Las Nubes" - Noisyyy ft. Streetboy Flow</strong>
+                  <p>Performance, pacing, and atmosphere.</p>
+                </div>
+              </article>
+              <article class="media-card video-work-card">
+                <a class="video-link video-music-work" href="https://youtu.be/jfTe5ArDhdI?si=kySD8I8qDNwn-DuC" target="_blank" rel="noreferrer" aria-label="Watch Pantycito Rosa by NATNAT on YouTube">
+                  <img src="work/pantycito-rosa.jpg" alt="YouTube thumbnail for Pantycito Rosa by NATNAT">
+                  <span class="play-mark" aria-hidden="true"></span>
+                </a>
+                <div>
+                  <span>Music video</span>
+                  <strong>"Pantycito Rosa" - NATNAT</strong>
+                  <p>Color, performance, and artist identity.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="work-group" data-work-category="music-production">
+            <div class="work-group-header">
+              <span>01</span>
+              <h3>Music Production</h3>
+              <p>Hear the vocal production, recording, mix, and master created through the La Galaxia workflow.</p>
+            </div>
+            <div class="work-group-grid sound-grid">
+              <article class="media-card spotify-card">
+                <div class="embed-frame spotify-frame">
+                  <iframe
+                    src="https://open.spotify.com/embed/album/2GPV4ywHSttMv6hVrh6kgp"
+                    title="69AF by NOYNA on Spotify"
+                    loading="lazy"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  ></iframe>
+                </div>
+                <div>
+                  <span>Music production</span>
+                  <strong>"69AF" - NOYNA EP</strong>
+                  <p>Vocal production, mix, and master by LMDP.</p>
+                  <a class="text-link" href="https://open.spotify.com/album/2GPV4ywHSttMv6hVrh6kgp?si=ve2ATWTITluY-xfy0cGV2g" target="_blank" rel="noreferrer">Open on Spotify</a>
+                </div>
+              </article>
+              <article class="media-card spotify-card">
+                <div class="embed-frame spotify-frame">
+                  <iframe
+                    src="https://open.spotify.com/embed/album/37eiIj2DWOg7xd56eIvp5T"
+                    title="Cual es tu destino by NOYNA on Spotify"
+                    loading="lazy"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  ></iframe>
+                </div>
+                <div>
+                  <span>Music production</span>
+                  <strong>"Cual es tu destino?" - NOYNA EP</strong>
+                  <p>Vocal production, recording, mix, and master by LMDP.</p>
+                  <a class="text-link" href="https://open.spotify.com/album/37eiIj2DWOg7xd56eIvp5T" target="_blank" rel="noreferrer">Open on Spotify</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="work-group is-hidden" data-work-category="events">
+            <div class="work-group-header">
+              <span>04</span>
+              <h3>Events</h3>
+              <p>Recaps, release moments, crowd coverage, and rollout momentum.</p>
+            </div>
+            <div class="work-group-grid sound-grid">
+              <article class="media-card" id="la-salsa-vlog-reference">
+                <a class="video-link video-vlog" href="https://youtu.be/tnQLEcZPfEg?si=tmhFV05JRVsy1mRe" target="_blank" rel="noreferrer" aria-label="Watch La Salsa Vlog by kendaya on YouTube">
+                  <img src="work/la-salsa-vlog.jpg" alt="YouTube thumbnail for La Salsa Vlog by kendaya">
+                  <span class="play-mark" aria-hidden="true"></span>
+                </a>
+                <div>
+                  <span>Event coverage & vlog</span>
+                  <strong>"La Salsa Vlog" - kendaya</strong>
+                  <p>Recap energy, crowd moments, and social storytelling.</p>
+                </div>
+              </article>
+              <article class="media-card" id="release-party-reference">
+                <a class="video-link video-release" href="https://youtu.be/A3C2a6x6UaQ?si=4mCjgGWmYz9s0nDK" target="_blank" rel="noreferrer" aria-label="Watch 69AF Release Party by NOYNA on YouTube">
+                  <img src="work/release-party.jpg" alt="YouTube thumbnail for 69AF Release Party by NOYNA">
+                  <span class="play-mark" aria-hidden="true"></span>
+                </a>
+                <div>
+                  <span>Release party</span>
+                  <strong>"69AF Release Party" - NOYNA</strong>
+                  <p>Event coverage built for rollout momentum.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section packages" id="packages">
+        <div class="section-heading">
+          <p class="eyebrow">Popular packages</p>
+          <h2>Bundled for real rollouts.</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package">
+            <div>
+              <p class="package-kicker">Starter</p>
+              <h3>Single Starter Pack</h3>
+              <p>Recording session, mix & master, cover art, two promo reels, and a mini photoshoot.</p>
+            </div>
+            <strong>$500+</strong>
+            <button type="button" class="button button-small package-ask" data-package="Single Starter Pack">Ask about this</button>
+          </article>
+          <article class="package package-featured">
+            <div>
+              <p class="package-kicker">Best value</p>
+              <h3>Artist Growth Pack</h3>
+              <p>Monthly content with four reels, photography bundle, strategy call, cover art, and ongoing support.</p>
+            </div>
+            <strong>$800+/mo</strong>
+            <button type="button" class="button button-small package-ask" data-package="Artist Growth Pack">Ask about this</button>
+          </article>
+          <article class="package">
+            <div>
+              <p class="package-kicker">Full campaign</p>
+              <h3>Full Rollout Package</h3>
+              <p>Content strategy, cover art and visualizer, reels and promo content, photoshoot, release plan, and rollout.</p>
+            </div>
+            <strong>$1,200+</strong>
+            <button type="button" class="button button-small package-ask" data-package="Full Rollout Package">Ask about this</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section equipment" id="equipment">
+        <div class="section-heading">
+          <p class="eyebrow">Equipment</p>
+          <h2>Gear in the workflow.</h2>
+        </div>
+        <div class="equipment-grid">
+          <article>
+            <div class="gear-visual gear-camera" aria-hidden="true">
+              <span class="camera-body"></span>
+              <span class="camera-lens"></span>
+              <span class="camera-flash"></span>
+            </div>
+            <div>
+              <strong>Canon Rebel T6</strong>
+              <p>18MP APS-C / Full HD 1080p / 9-point AF</p>
+              <p class="equipment-use">Best for simple photoshoots, behind-the-scenes stills, social content, and clean starter visuals when the project needs solid photography without overcomplicating the setup.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-camera" aria-hidden="true">
+              <span class="camera-body"></span>
+              <span class="camera-lens"></span>
+              <span class="camera-flash"></span>
+            </div>
+            <div>
+              <strong>Sony ZV-E10</strong>
+              <p>24.2MP APS-C / 4K video / 425 phase-detect AF</p>
+              <p class="equipment-use">Best for vlogs, reels, talking-head content, product shots, creator videos, and fast autofocus scenes where the subject needs to stay sharp while moving.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-camera" aria-hidden="true">
+              <span class="camera-body"></span>
+              <span class="camera-lens"></span>
+              <span class="camera-flash"></span>
+            </div>
+            <div>
+              <strong>Sony Alpha 7 IV</strong>
+              <p>33MP full-frame / 4K 60p 10-bit / 759 phase-detect AF</p>
+              <p class="equipment-use">Best for high-end music videos, cinematic portraits, low-light scenes, brand campaigns, and projects that need richer detail, color, and a more premium visual feel.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-camera" aria-hidden="true">
+              <span class="camera-body"></span>
+              <span class="camera-lens"></span>
+              <span class="camera-flash"></span>
+            </div>
+            <div>
+              <strong>Sony Alpha 6100</strong>
+              <p>24.2MP APS-C / 4K video / up to 11 fps</p>
+              <p class="equipment-use">Best for music videos, artist photos, promo content, BTS, and clean social media visuals when you need sharp images and smooth 4K video without a huge production setup.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-screen" aria-hidden="true">
+              <span class="screen-frame"></span>
+              <span class="screen-scan"></span>
+            </div>
+            <div>
+              <strong>Green Screen Setup</strong>
+              <p>Chroma key setup / clean cutouts / promo visuals</p>
+              <p class="equipment-use">Best for putting artists into custom worlds, branded backgrounds, lyric-video scenes, reaction clips, product promos, and surreal content without needing a full physical set.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-mic" aria-hidden="true">
+              <span class="mic-body"></span>
+              <span class="mic-stand"></span>
+              <span class="music-note note-one">♪</span>
+              <span class="music-note note-two">♫</span>
+            </div>
+            <div>
+              <strong>RODE NT1</strong>
+              <p>1-inch cardioid condenser / 4 dBA noise / 142 dB SPL</p>
+              <p class="equipment-use">Best for clean vocal recording, hooks, demos, voiceovers, podcasts, and intimate acoustic details. It captures a polished vocal sound while keeping background noise low.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-mic" aria-hidden="true">
+              <span class="mic-body"></span>
+              <span class="mic-stand"></span>
+              <span class="music-note note-one">♪</span>
+              <span class="music-note note-two">♫</span>
+            </div>
+            <div>
+              <strong>Neumann TLM 102</strong>
+              <p>Cardioid condenser / 20 Hz-20 kHz / 144 dB SPL</p>
+              <p class="equipment-use">Best for premium lead vocals, detailed rap and singing takes, ad-libs, voiceovers, and sessions where the vocal needs to feel crisp, present, and release-ready.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-wireless" aria-hidden="true">
+              <span class="wireless-pack pack-one"></span>
+              <span class="wireless-pack pack-two"></span>
+              <span class="signal-ring signal-one"></span>
+              <span class="signal-ring signal-two"></span>
+            </div>
+            <div>
+              <strong>RODE Wireless GO II</strong>
+              <p>Dual-channel wireless / 2.4 GHz / up to 200 m range</p>
+              <p class="equipment-use">Best for interviews, vlogs, event coverage, BTS, tutorials, and talking-head content where people need to move freely while the audio stays clear.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-interface" aria-hidden="true">
+              <span class="interface-body"></span>
+              <span class="interface-knob"></span>
+              <span class="meter meter-one"></span>
+              <span class="meter meter-two"></span>
+            </div>
+            <div>
+              <strong>Apollo Twin USB</strong>
+              <p>10 x 6 USB 3 / 24-bit 192 kHz / UAD-2 DUO DSP</p>
+              <p class="equipment-use">Best for recording vocals with high-quality conversion, monitoring with low latency, and using professional vocal processing while the artist performs.</p>
+            </div>
+          </article>
+          <article>
+            <div class="gear-visual gear-monitor" aria-hidden="true">
+              <span class="speaker-box"></span>
+              <span class="speaker-cone"></span>
+              <span class="eq-bar bar-one"></span>
+              <span class="eq-bar bar-two"></span>
+              <span class="eq-bar bar-three"></span>
+            </div>
+            <div>
+              <strong>Yamaha HS5</strong>
+              <p>5-inch woofer / 54 Hz-30 kHz / 70 W bi-amp</p>
+              <p class="equipment-use">Best for mixing decisions, playback checks, beat work, vocal balance, and making sure the song translates clearly before it leaves La Galaxia.</p>
+            </div>
+          </article>
+        </div>
+        <article class="green-screen-feature">
+          <div class="green-screen-video">
+            <video class="scroll-video" autoplay muted loop playsinline webkit-playsinline preload="auto" data-autoplay-video>
+              <source src="services/green-screen-demo-ready.mp4" type="video/mp4">
+              Your browser does not support this video preview.
+            </video>
+          </div>
+          <div>
+            <p class="eyebrow">Green Screen Services</p>
+            <h3>Clean cutouts. Custom worlds. Promo-ready visuals.</h3>
+            <p>
+              We use green screen setups for visualizers, reels, performance clips, interviews,
+              and branded concepts that need a flexible background or a more surreal visual world.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">Who We Are</p>
+          <h2>We are Los Más Duros Del Planeta.</h2>
+        </div>
+        <figure class="who-hero">
+          <img src="about/lmdp-crew.jpg" alt="Original LMDP crew photo">
+          <figcaption>
+            <span>LMDP Crew</span>
+            <strong>Built by creators. Made for the real.</strong>
+            <p>A multimedia movement for artists, brands, and moments that need real energy.</p>
+          </figcaption>
+        </figure>
+        <div class="about-list">
+          <article><span>01</span><h3>The Crew</h3><p>LMDP is a small, hands-on creative crew built by people who live the artist process from the inside. We understand the pressure of making something feel real, because we are creators too.</p></article>
+          <article><span>02</span><h3>The Mission</h3><p>Our job is to help your idea feel focused, confident, and ready for the world. We care about the details that make a song, visual, shoot, rollout, or event feel intentional instead of random.</p></article>
+          <article><span>03</span><h3>Why We Exist</h3><p>Independent creators often have the vision but not the full team around them. LMDP exists to be that creative support system: a place where ideas get organized, elevated, and executed with care.</p></article>
+        </div>
+      </section>
+
+      <section class="section instagram-section" id="instagram">
+        <div class="section-heading">
+          <p class="eyebrow">Instagram</p>
+          <h2>@losmasdurosdelplaneta</h2>
+        </div>
+        <a class="instagram-card" href="https://www.instagram.com/losmasdurosdelplaneta/" target="_blank" rel="noreferrer" aria-label="Open LMDP Instagram profile">
+          <div class="instagram-phone" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div>
+            <span>Latest + pinned posts</span>
+            <strong>Follow the drops, reels, BTS, and LMDP moments.</strong>
+            <p>Tap through to see the newest posts and pinned work directly on Instagram.</p>
+          </div>
+          <b>@losmasdurosdelplaneta</b>
+        </a>
+      </section>
+
+      <section class="section contact" id="contact">
+        <form class="brief" id="brief-form">
+          <div class="contact-form-heading">
+            <p class="eyebrow">Start Your Mission</p>
+            <h2>Tell us what you are building.</h2>
+            <p>Tap a mission and the brief fills in for you.</p>
+          </div>
+          <div class="mission-options" aria-label="Start your mission options">
+            <button class="mission-option" type="button" data-service="Music Production" data-message="I want to record a song with LMDP.">
+              <span aria-hidden="true">🚀</span>
+              Record a Song
+            </button>
+            <button class="mission-option" type="button" data-service="Content & Social" data-message="I want to shoot content with LMDP.">
+              <span aria-hidden="true">🎥</span>
+              Shoot Content
+            </button>
+            <button class="mission-option" type="button" data-service="Visuals & Design" data-message="I want to book photography with LMDP.">
+              <span aria-hidden="true">📸</span>
+              Book Photography
+            </button>
+            <button class="mission-option" type="button" data-service="Website / Digital" data-message="I want LMDP to build a website.">
+              <span aria-hidden="true">🌐</span>
+              Build a Website
+            </button>
+            <button class="mission-option" type="button" data-service="Visuals & Design" data-message="I want LMDP to design something for my brand or rollout.">
+              <span aria-hidden="true">🎨</span>
+              Design Something
+            </button>
+            <button class="mission-option" type="button" data-service="Music Production" data-message="I want LMDP to mix and master my song.">
+              <span aria-hidden="true">🎚️</span>
+              Mix & Master
+            </button>
+            <button class="mission-option" type="button" data-service="Visuals & Design" data-message="I want LMDP to create cover art or a visual identity for my release.">
+              <span aria-hidden="true">💿</span>
+              Cover Art
+            </button>
+            <button class="mission-option" type="button" data-service="Content & Social" data-message="I want LMDP to edit reels, TikToks, or short-form promo content.">
+              <span aria-hidden="true">📱</span>
+              Edit Reels
+            </button>
+            <button class="mission-option" type="button" data-service="Events & Experiences" data-message="I want LMDP to cover or help plan an event.">
+              <span aria-hidden="true">🎉</span>
+              Plan an Event
+            </button>
+            <button class="mission-option" type="button" data-service="Content & Social" data-message="I want to book a green screen or creative content shoot with LMDP.">
+              <span aria-hidden="true">🟩</span>
+              Green Screen Shoot
+            </button>
+            <button class="mission-option" type="button" data-service="Strategy & Business" data-message="I want LMDP to help plan a rollout for my song, project, brand, or event.">
+              <span aria-hidden="true">🧭</span>
+              Plan a Rollout
+            </button>
+          </div>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" placeholder="Your name">
+          </label>
+          <label>
+            Service
+            <select name="service">
+              <option value="Music Production">Music Production</option>
+              <option value="Visuals & Design">Visuals & Design</option>
+              <option value="Content & Social">Content & Social</option>
+              <option value="Events & Experiences">Events & Experiences</option>
+              <option value="Strategy & Business">Strategy & Business</option>
+              <option value="Website / Digital">Website / Digital</option>
+              <option value="Popular Package">Popular Package</option>
+            </select>
+          </label>
+          <label>
+            Budget
+            <input name="budget" type="text" placeholder="$500+">
+          </label>
+          <label>
+            Project
+            <textarea name="message" rows="5" placeholder="Tell us what you want to build."></textarea>
+          </label>
+          <div class="brief-actions">
+            <button class="button button-primary" type="button" id="whatsapp-brief">Send WhatsApp brief</button>
+            <button class="button button-secondary" type="button" id="email-brief">Email brief</button>
+          </div>
+        </form>
+
+        <div class="contact-copy contact-info-panel">
+          <p class="eyebrow">LMDP Contact</p>
+          <h2>Business information</h2>
+          <p>Reach Los Más Duros Del Planeta directly for bookings, questions, and project details.</p>
+          <div class="contact-links">
+            <a href="tel:+15618972555"><span>Phone</span>+1 (561) 897-2555</a>
+            <a href="mailto:losmasdurosdelplaneta.llc@gmail.com"><span>Email</span>losmasdurosdelplaneta.llc@gmail.com</a>
+            <a href="https://www.instagram.com/losmasdurosdelplaneta/" target="_blank" rel="noreferrer"><span>Instagram</span>@losmasdurosdelplaneta</a>
+            <p><span>Based in</span>Miami, FL</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-socials" aria-label="Quick contact links">
+      <a class="floating-social whatsapp-float" href="https://wa.me/message/Q3SZMPUTTFC7F1" target="_blank" rel="noreferrer" aria-label="Chat with LMDP on WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M16 3.2A12.7 12.7 0 0 0 5.1 22.5L3.8 28.8l6.4-1.6A12.7 12.7 0 1 0 16 3.2Zm0 2.4a10.3 10.3 0 1 1-5.2 19.2l-.4-.2-3.5.9.7-3.5-.2-.4A10.3 10.3 0 0 1 16 5.6Zm-5.1 5.6c-.3 0-.8.1-1.2.6-.4.5-1.5 1.5-1.5 3.6s1.5 4.1 1.7 4.4c.2.3 3 4.8 7.4 6.5 3.7 1.5 4.4.9 5.2.8.8-.1 2.5-1 2.8-2 .3-1 .3-1.8.2-2-.1-.2-.3-.3-.7-.5l-2.6-1.3c-.4-.1-.6-.2-.9.2l-1.2 1.5c-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-1.9-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2.1-.5 0-.7l-1.2-2.8c-.3-.7-.6-.6-.9-.6h-.8Z"/>
+        </svg>
+      </a>
+      <a class="floating-social instagram-float" href="https://www.instagram.com/losmasdurosdelplaneta/" target="_blank" rel="noreferrer" aria-label="Follow LMDP on Instagram">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M10.5 4h11A6.5 6.5 0 0 1 28 10.5v11a6.5 6.5 0 0 1-6.5 6.5h-11A6.5 6.5 0 0 1 4 21.5v-11A6.5 6.5 0 0 1 10.5 4Zm0 2.5a4 4 0 0 0-4 4v11a4 4 0 0 0 4 4h11a4 4 0 0 0 4-4v-11a4 4 0 0 0-4-4h-11ZM16 10.3a5.7 5.7 0 1 1 0 11.4 5.7 5.7 0 0 1 0-11.4Zm0 2.5a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm6-3.8a1.2 1.2 0 1 1 0 2.4A1.2 1.2 0 0 1 22 9Z"/>
+        </svg>
+      </a>
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Los Más Duros Del Planeta</strong>
+        <span>LMDP LLC · Miami, FL · Worldwide · Est. 2026</span>
+      </div>
+      <p>Let's create. Let's build. Let's take over.</p>
+    </footer>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top">Top</a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
