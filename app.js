@@ -125,6 +125,8 @@ const spanishText = {
   "Mobile-first layouts": "Diseño mobile-first",
   "360 studio tour": "Tour 360 del estudio",
   "Animated service portfolio": "Portafolio animado de servicios",
+  "Brand + service experience": "Experiencia de marca + servicios",
+  "Interactive creative web app": "Aplicación web creativa e interactiva",
   "Flyer Design": "Diseño de Flyers",
   "Custom promotional flyers for releases, performances, parties, launches, and events.": "Flyers promocionales personalizados para lanzamientos, presentaciones, fiestas y eventos.",
   "Event + Promo Graphics": "Gráficos de Eventos + Promoción",
@@ -193,9 +195,6 @@ const spanishText = {
   "Step Into La Galaxia Home Studio": "Entra a La Galaxia Home Studio",
   "360 home studio view": "Vista 360 del home studio",
   "Drag / swipe to look around": "Arrastra / desliza para mirar alrededor",
-  "Studio in motion": "Estudio en movimiento",
-  "Lights on. Session ready.": "Luces listas. Sesión lista.",
-  "Step into the room, then hear the vocal production made inside La Galaxia.": "Entra al cuarto y luego escucha la producción vocal hecha dentro de La Galaxia.",
   "Record your next hit here": "Graba tu próximo hit aquí",
   "Private, vibey, and ready for the session.": "Privado, con vibra y listo para la sesión.",
   "La Galaxia is the physical home studio where LMDP records vocals, shapes ideas, builds references, and captures content around the music. Tour the room, then jump into the music production references to hear the sound created in this space.": "La Galaxia es el home studio físico donde LMDP graba voces, desarrolla ideas, crea referencias y captura contenido alrededor de la música. Recorre el cuarto y luego escucha las referencias de producción musical para oír el sonido creado en este espacio.",
@@ -575,7 +574,10 @@ serviceItems.forEach((item) => {
     item.setAttribute("aria-expanded", String(open));
   };
 
-  item.addEventListener("click", toggleService);
+  item.addEventListener("click", (event) => {
+    if (event.target.closest("a, button, input, textarea, select")) return;
+    toggleService();
+  });
   item.addEventListener("keydown", (event) => {
     if (event.key !== "Enter" && event.key !== " ") return;
     event.preventDefault();
