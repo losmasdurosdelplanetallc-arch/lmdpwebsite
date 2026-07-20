@@ -1,2 +1,0 @@
-# lmdpwebsite
-lmdp website
