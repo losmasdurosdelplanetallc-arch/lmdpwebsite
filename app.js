@@ -229,6 +229,8 @@ const spanishText = {
   "Artist visuals and rollout style.": "Visuales de artista y estilo de lanzamiento.",
   "Performance, pacing, and atmosphere.": "Performance, ritmo y atmósfera.",
   "Color, performance, and artist identity.": "Color, performance e identidad de artista.",
+  "LMDP music video": "Video musical de LMDP",
+  "Direction, shooting, edit, and release-ready visual energy.": "Dirección, grabación, edición y energía visual lista para lanzamiento.",
   "Hear the vocal production, recording, mix, and master created through the La Galaxia workflow.": "Escucha la producción vocal, grabación, mezcla y master creados con el workflow de La Galaxia.",
   "Music production": "Producción musical",
   "Vocal production, mix, and master by LMDP.": "Producción vocal, mezcla y master por LMDP.",
