@@ -1,0 +1,22 @@
+LMDP SERVICES ASSET UPLOAD
+
+The original services folder is about 53 MB. It has been split into three
+GitHub-safe batches while keeping every website path unchanged.
+
+Upload the batches in this order:
+
+1. 01-featured-cover-art
+2. 02-cover-art-library
+3. 03-service-visuals-merch
+
+For each batch:
+
+1. Open the repository root on GitHub.
+2. Choose Add file, then Upload files.
+3. Drag the inner services folder from that batch into the upload area.
+4. Confirm that GitHub shows paths beginning with services/.
+5. Commit that batch before uploading the next one.
+
+Do not rename the files or remove the services folder level. The website code
+already points to these exact paths. ZIP files must be expanded before their
+contents are uploaded to GitHub.
